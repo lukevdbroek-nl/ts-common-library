@@ -1,0 +1,26 @@
+{
+  "name": "ts-common-library",
+  "version": "0.0.1",
+  "description": "An open-source TypeScript library with useful utilities to help streamline web application development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukevdbroek-nl/ts-common-library.git"
+  },
+  "keywords": [
+    "utility",
+    "typescript",
+    "typescript-library",
+    "utility-library",
+    "ts-library"
+  ],
+  "author": "LNME Media & Design",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/lukevdbroek-nl/ts-common-library/issues"
+  },
+  "homepage": "https://github.com/lukevdbroek-nl/ts-common-library#readme"
+}
