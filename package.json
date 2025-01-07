@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "An open-source TypeScript library with useful utilities to help streamline web application development.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test":  "echo \"No tests defined\" && exit 0"
   },
