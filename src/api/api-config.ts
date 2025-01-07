@@ -1,4 +1,5 @@
 class ApiConfig {
-    baseURL: string;
+    baseURL: string = "";
+    requestHeaders = { }
 }
 export default ApiConfig;
