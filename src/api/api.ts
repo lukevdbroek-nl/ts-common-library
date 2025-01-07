@@ -1,29 +1,28 @@
 import ApiConfig from "./api-config";
 class Api {
-    private readonly _baseURL: string;
     private _config: ApiConfig;
-    constructor(baseURL: string, config: ApiConfig = new ApiConfig()) {
-        this._baseURL = baseURL;
+    constructor(config: ApiConfig = new ApiConfig()) {
         this._config = config;
     }
 
-    async get(url: string): Promise<any> {
+    async get(url: string) {
         try {
-            const response = await fetch(`${this._baseURL}/${url}`, {
+            console.log(`${this._config.baseURL}/${url}`);
+            const response = await fetch(`${this._config.baseURL}/${url}`, {
                 method: 'GET',
                 headers: {
                     ...this._config.requestHeaders
                 },
             });
-            return response.json();
+            return await response.json();
         } catch (e) {
             throw e;
         }
     }
 
-    async set(url: string, body: any): Promise<any> {
+    async set(url: string, body: any) {
         try {
-            const response = await fetch(`${this._baseURL}/${url}`, {
+            const response = await fetch(`${this._config.baseURL}/${url}`, {
                 method: 'POST',
                 headers: {
                     ...this._config.requestHeaders
@@ -36,9 +35,9 @@ class Api {
         }
     }
 
-    async update(url: string, body: any): Promise<any> {
+    async update(url: string, body: any) {
         try {
-            const response = await fetch(`${this._baseURL}/${url}`, {
+            const response = await fetch(`${this._config.baseURL}/${url}`, {
                 method: 'PUT',
                 headers: {
                     ...this._config.requestHeaders
@@ -51,9 +50,9 @@ class Api {
         }
     }
 
-    async delete(url: string): Promise<any> {
+    async delete(url: string) {
         try {
-            const response = await fetch(`${this._baseURL}/${url}`, {
+            const response = await fetch(`${this._config.baseURL}/${url}`, {
                 method: 'DELETE',
                 headers: {
                     ...this._config.requestHeaders
