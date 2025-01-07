@@ -1,0 +1,17 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore build output directory
+dist/
+
+# Ignore test files
+tests/
+
+# Ignore specific TypeScript files
+src/some-specific-file.ts
+
+# Ignore all files in a directory
+src/legacy-code/
+
+# Ignore all files with a .min.js extension
+*.min.js
