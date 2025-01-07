@@ -1,4 +1,4 @@
-import ApiConfig from "./api-config";
+import ApiConfig from "./api-config.js";
 class Api {
     private _config: ApiConfig;
     constructor(config: ApiConfig = new ApiConfig()) {

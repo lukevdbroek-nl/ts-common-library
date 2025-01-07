@@ -1,33 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",                        // Target latest JavaScript version
-    "module": "ESNext",                        // Use ES module system
-    "moduleResolution": "node",                // Resolve modules using Node.js resolution
-    "declaration": true,                       // Generate corresponding .d.ts files for type definitions
-    "declarationMap": true,                    // Create a sourcemap for .d.ts files
-    "outDir": "./dist",                        // Output directory for compiled files
-    "esModuleInterop": true,                   // Enable default imports for CommonJS modules
-    "skipLibCheck": true,                      // Skip type checking of declaration files
-    "strict": true,                            // Enable all strict type-checking options
-    "noUnusedLocals": true,                    // Report errors on unused locals
-    "noUnusedParameters": true,                // Report errors on unused parameters
-    "isolatedModules": true,                   // Ensure that each file can be safely transpiled independently
-    "allowSyntheticDefaultImports": true,      // Allow default imports even when the module doesn't have a default export
-    "lib": [
-      "ESNext",
-      "dom"
-    ],                         // Include the latest ES built-in library
-    "resolveJsonModule": true,                 // Allow importing of JSON modules
-    "skipDefaultLibCheck": true,               // Skip default lib check (useful in large projects)
-    "removeComments": true,                    // Remove comments from output files
-    "preserveConstEnums": true,                // Retain const enums in output
-    "noEmit": false                            // Ensure emitting JavaScript files
-  },
-  "include": [
-    "src/**/*"                                 // Include all files in the src folder
-  ],
-  "exclude": [
-    "node_modules",                            // Exclude node_modules
-    "dist"                                     // Exclude dist folder (output folder)
-  ]
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
 }
